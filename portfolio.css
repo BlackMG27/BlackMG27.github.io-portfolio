@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+html{
+	font-family: 'Lora', Georgia, serif;
+	background-color: #f9f6f2;
+}
+
+.row{
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1020px;
+}
+
+nav{
+	padding-top: 2%;
+	padding-right: 3%;
+	display: block;
+	float: right;
+}
+
+li {
+	padding: 5px;
+	display: inline;
+	font-size: 1.15em;
+}
+
+a {
+	text-decoration: none;
+	color: #f9f6f2;
+}
+
+h1{
+	text-align: center;
+	padding-top: 14%;
+	padding-bottom: 65%;
+	font-size: 4.2em;
+	font-weight: 400;
+	margin-top: -.6%;
+}
+
+h2{
+	font-size: 2.7em;
+	color: #f9f6f2;
+}
+
+#top_head{
+	background-color: rgba(46, 1, 73, 1);
+	color: #f9f6f2;
+	-webkit-clip-path: polygon(0 0%, 150% 0, 100% 68%, 76% 38%, 23% 38%, 0 68%);
+	-moz-clip-path: polygon(0 0%, 150% 0, 100% 68%, 76% 38%, 23% 38%, 0 68%);
+	-o-clip-path: polygon(0 0%, 150% 0, 100% 68%, 76% 38%, 23% 38%, 0 68%);
+    clip-path: polygon(0 0%, 150% 0, 100% 68%, 76% 38%, 23% 38%, 0 68%);
+    margin-bottom: -31%;
+    top: 0;
+}
+
+#project_gallery{
+	width: 100%;
+	display: inline-block;
+	clear: both;
+}
+
+#project_gallery h3{
+	text-align: center;
+}
+
+figure{
+	max-width: 300px;
+	float: left;
+	display: block;
+	margin: 15px;
+	background-color: rgba(46, 1, 73, 1);
+	border-radius: 10px;
+	
+}
+
+figure a {
+	text-decoration: none;
+}
+
+.project_hover{
+	width: 100%;
+	overflow: hidden;
+}
+
+.project_hover > img {
+	border-radius: 10px 10px 0 0;
+}
+
+.project_hover > img:hover{
+	transform: scale(1.25);
+	transition: .3s;
+}
+
+figcaption{
+	color: #f9f6f2;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#s2{
+	background-color: rgba(46, 1, 73, 1);
+	-webkit-clip-path: polygon(0 0%, 50% 28%, 100% 0, 100% 70%, 50% 44%, 0 70%);
+	-moz-clip-path: polygon(0 0%, 50% 28%, 100% 0, 100% 70%, 50% 44%, 0 70%);
+	--clip-path: polygon(0 0%, 50% 28%, 100% 0, 100% 70%, 50% 44%, 0 70%);
+	clip-path: polygon(0 0%, 50% 28%, 100% 0, 100% 70%, 50% 44%, 0 70%);
+	width: 100%;
+	height: 900px;
+	margin-bottom: -15%;
+}
+
+#s3{
+	background-color: rgba(46, 1, 73, 1);
+	-webkit-clip-path: polygon(0 0%, 50% 28%, 100% 0, 100% 70%, 50% 44%, 0 70%);
+	-moz-clip-path: polygon(0 0%, 50% 28%, 100% 0, 100% 70%, 50% 44%, 0 70%);
+	--clip-path: polygon(0 0%, 50% 28%, 100% 0, 100% 70%, 50% 44%, 0 70%);
+	clip-path: polygon(0 0%, 50% 28%, 100% 0, 100% 70%, 50% 44%, 0 70%);
+	width: 100%;
+	height: 900px;
+	margin-bottom: -15%;
+}
+
+#about p {
+	font-size: 1.29em;
+	line-height: 1.5em;
+	width: 70%;
+	padding-left: 15%;
+
+}
+
+#about h3,
+#contact h3 {
+	text-align: center;
+	font-size: 1.9em;
+}
+
+#top{
+	clear: both;
+	margin-bottom: 30px;
+}
+
+form{
+	width: 50%;
+	float: left;
+}
+
+input,
+textarea,
+#submit{
+	width: 95%;
+	margin: 5px;
+}
+
+input{
+	height: 30px;
+	border-radius: 5px;
+}
+
+textarea{
+	height: 110px;
+	border-radius: 5px;
+}
+
+#submit{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#social{
+	width: 35%;
+	float: right;
+}
+
+#social > h4{
+	font-size: 1.3em;
+}
+
+#icons > a > img{
+	margin: 10px;
+}
+
+footer{
+	background-color: rgb(18, 0, 28);
+	color: #f9f6f2;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin-top: 30%; 
+}
+
+footer >div>  p{
+	margin: 0;
+	padding: 12px;
+	text-align: center;
+}

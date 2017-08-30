@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"/>
+	<link rel="stylesheet" href="portfolio.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<meta name = "description" content= "Portfolio for the #30Days30Sites challenge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<section id="top_head">
+			<nav>
+					<li><a href="#project_gallery">Projects</a></li>
+					<li><a href="#about">About Me</li></li>
+					<li><a href="#contact">Contact Me</a></li>
+				</nav>
+		<div class="row">
+			
+			<h1>Ogechi Ike</h1>
+			<h2>Web Designer | Front-End Developer | Baking Enthusiast</h2>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			
+			<div id="project_gallery">
+			
+				<figure>
+					<a href="https://codepen.io/BlackMG27/pen/prygyg" target="_blank">
+						<div class="project_hover">	
+							<img src="images/quote_profile.png" alt="Random Quote Machine"/>
+						</div>
+						<figcaption>Random Quote Machine</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="https://codepen.io/BlackMG27/pen/rzWqgY" target="_blank">
+						<div class="project_hover">	
+							<img src="images/local_weather.png" alt="Local Weather App"/>
+						</div>
+						<figcaption>Local Weather App</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="images/accidental_shakespeare_hackathon_design.pdf" target="_blank">
+						<div class="project_hover">
+							<img src="images/accidental_shakespeare.png" alt="Accidental Shakespeare Design"/>
+						</div>
+						<figcaption>Accidental Shakespeare</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="images/AIGA_Mentor_10-Screens.pdf" target="_blank">
+						<div class="project_hover">
+							<img src="images/mobile_wireframe.png" alt="AIGA 10 Screen Wireframe"/>
+						</div>
+					<figcaption>AIGA 10 Screen Wireframe</figcaption>
+					</a>
+				</figure>	
+			</div>
+		</div>
+	</section>
+	<section id="s2">
+	</section>
+	<section id="about">
+		<div class="row">
+			<h3>About Me</h3>
+			<p>I am a results-driven designer with over two years of experience in web design, front-end development, 
+				storyboarding, wireframing, and out-of-the-box problem solving to offer multi-tasking capabilities 
+				and efficiently produce design projects.</p>
+			<p>I am a creator who enjoys giving others great experiences and memories through my creations. I want 
+				to know why something is the way it is, or the root of the problem, and how to make it better. </p>
+			<p>When I get a design or development project, I relish the challenge of creating something new 
+				while putting some of my own personality into the mix. Furthermore, understanding the user is 
+				king when dealing with clients and I always like to ask questions and sharing a story so that I 
+				can better understand their problem.</p>
+			<p>I enjoy self-reflection and meditation especially when I am traveling. Traveling lets me get out of
+				 my own little world and care more about the one that is inhabited by 7,000,000,000+ people. </p>
+
+				 <p>Moreover, I've been told that I'm one hell of a baker!</p>
+		</div>
+	</section>
+	<section id="s3">
+	</section>
+	<section id="contact">
+		<div class="row">
+			<h3>Contact Me</h3>
+			<div id="top">
+				<form>
+					<label for="GetName">Name</label><br/>
+					<input for="GetName" type="text" name="name" placeholder="Enter Name" required="yes" /><br/>
+					<label for="GetEmail">Email</label><br/>
+					<input for="GetEmail"type="email" name="email" placeholder="Enter Email" required="yes" /><br/>
+					<label>Message</label><br/>
+					<textarea scrollable="yes" placeholder="Enter Message"></textarea><br/>
+					<span type="submit" id="submit">Send Message</span>
+				</form>
+				<div id="social">
+					<h4>Reach out to me on Social Media!</h4>
+					<div id="icons">
+						<a href="https://github.com/BlackMG27" target="_blank"><img src="images/github.png" alt="Github"></a>
+						<a href="https://linkedin.com/in/ogechi-ike" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+						<a href="https://twitter.com/OgIke27" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+					</div>	
+				</div>	
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="row">
+			<p>&copy; 2017 Ike and CO. Designs. All Rights Reserved.</p> 
+		</div>
+	</footer>
+</body>
+<script>
+	
+	$(document).ready(function(){
+		$(function(){
+					$('#top_head nav li a').bind('click', function(event){
+						var $anchor = $(this);
+
+						$('html, body').animate({
+							scrollTop: $($anchor.attr('href')).offset().top + "px"
+						}, 1600);
+
+						event.preventDefault();
+					});
+				});
+
+	});
+
+
+</script>
+</html>
